@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lapse &mdash; Support</title>
+<meta name="description" content="Help with Lapse: capture, reminders, subscriptions and troubleshooting.">
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+
+<div class="header">
+  <img class="mark" src="icon.svg" alt="Lapse">
+  <h1>LAPSE</h1>
+  <p class="subtitle">Days left, at a glance</p>
+  <span class="effective-date">Support &nbsp;&middot;&nbsp; Updated 26 September 2026</span>
+</div>
+
+<div class="container">
+
+  <div class="summary-box">
+    <p><strong>Need a person?</strong> Write to
+    <a href="mailto:appwells31@gmail.com">appwells31@gmail.com</a>. Tell us what
+    you were doing and what happened instead, and include your iOS version if
+    something looks broken.</p>
+  </div>
+
+  <section>
+    <h2>Getting started</h2>
+    <h3>Add your first thing</h3>
+    <p>Tap the camera and point it at anything with a date on it &mdash; a
+    passport, a carton of milk, an insurance letter. Lapse highlights the dates
+    it can see. Tap the one you mean, check the name and category it has
+    guessed, and save.</p>
+    <p>You can also type it (<code>car insurance 14 march</code>) or hold the
+    microphone and say it.</p>
+
+    <h3>Let it remind you</h3>
+    <p>Say yes when Lapse asks for notification permission. Without it the app
+    still works, but it cannot tell you anything &mdash; which is most of the
+    point.</p>
+  </section>
+
+  <section>
+    <h2>Frequently asked questions</h2>
+
+    <h3>Why does the countdown not match the date on the label?</h3>
+    <p>Because the date on the label is usually not the day you need to act. A
+    passport expiring in June 2027 is an autumn 2026 problem: most countries
+    want six months of validity left, and renewals take weeks. Lapse shows you
+    the day you must <strong>act by</strong>, with the printed date underneath.</p>
+
+    <h3>What time do reminders arrive?</h3>
+    <p>At an hour that suits the category &mdash; food at 17:00, before dinner
+    is decided; documents and money at 09:00, when an office is open; household
+    things at 10:00. Change it for any one thing in its detail screen, under
+    <strong>Reminders &rarr; Time of day</strong>.</p>
+    <p>Reminders use wall-clock time, so a 09:00 reminder stays at 09:00 after
+    you fly somewhere else.</p>
+
+    <h3>Can I track something with no expiry date?</h3>
+    <p>Yes. Turn the date off and add reminders on whatever days you like. This
+    is how you handle "I bought twelve eggs, remind me to buy more in ten
+    days".</p>
+
+    <h3>Will a reminder sound if my phone is on silent?</h3>
+    <p>No. When the ring/silent switch is set to silent, iOS suppresses sound
+    and, depending on your Sounds &amp; Haptics settings, vibration too. No app
+    can override that switch without Apple's Critical Alerts entitlement, which
+    is reserved for medical and public-safety use. Lapse does not claim it. The
+    notification still arrives &mdash; it simply arrives quietly.</p>
+
+    <h3>How do I pause something without deleting it?</h3>
+    <p>Pause it from its detail screen. It stays in your list with a grey ring
+    and a crossed-out bell, and the <strong>Paused</strong> chip at the top of
+    the list brings all of them back when you want to find them again.</p>
+
+    <h3>I opened it &mdash; does the date change?</h3>
+    <p>Tell Lapse and it will. Many things expire from the moment they are
+    opened rather than from the date printed on them. There is also a freezer:
+    freezing something stops its clock entirely, and taking it out starts a
+    short new one.</p>
+
+    <h3>What does a subscription cost, and what happens if I don't buy one?</h3>
+    <p>Lapse is completely free for your first 30 days, with nothing locked and
+    no card required. After that a subscription unlocks adding new things,
+    capture, widgets, iCloud sync and the archive.</p>
+    <p><strong>Reminders you have already set keep running, forever, whether you
+    subscribe or not.</strong> We will not silence a passport warning somebody
+    is relying on over money.</p>
+    <p>If you do subscribe, Lapse adds the renewal date to your own list and
+    warns you before you are charged. That is what the app is for.</p>
+
+    <h3>How do I cancel or restore a subscription?</h3>
+    <p>Cancel in <strong>iOS Settings &rarr; your name &rarr; Subscriptions</strong>.
+    To restore on a new device, open Lapse's Settings and tap
+    <strong>Restore purchases</strong>.</p>
+
+    <h3>Does my data sync between my iPhone and iPad?</h3>
+    <p>Yes, through your own private iCloud database, if iCloud sync is on and
+    both devices are signed into the same Apple Account. We never see it. You
+    can turn sync off and the app becomes entirely offline.</p>
+
+    <h3>Can I get my data out?</h3>
+    <p>Settings exports everything as CSV or JSON, with no friction and no
+    screen trying to talk you out of it.</p>
+  </section>
+
+  <section>
+    <h2>Troubleshooting</h2>
+
+    <h3>Reminders are not arriving</h3>
+    <ul>
+      <li>Open Lapse's Settings and look at <strong>Reminders &rarr; Status</strong>.
+      If permission is missing or has been revoked, it says so there, with one
+      tap to fix it.</li>
+      <li>Check <strong>iOS Settings &rarr; Notifications &rarr; Lapse</strong> is
+      allowed.</li>
+      <li>Check a Focus or Do Not Disturb schedule is not holding them back.</li>
+      <li>iOS allows any app a limited number of pending reminders. Lapse keeps
+      the most important ones scheduled and brings the rest into range as they
+      approach &mdash; so something months away may legitimately not be
+      scheduled yet. The status screen shows how many are live.</li>
+    </ul>
+
+    <h3>The camera is not reading a date</h3>
+    <ul>
+      <li>Give it more light and hold steadier &mdash; small print on curved
+      packaging is the hardest case there is.</li>
+      <li>If the date is genuinely unreadable, use <strong>Bought today</strong>
+      or <strong>Opened today</strong> and Lapse will estimate, or type the date
+      yourself. You should never hit a dead end.</li>
+      <li>Lapse deliberately ignores batch, lot and manufacture codes. Mistaking
+      one of those for an expiry date is the worst thing it could do.</li>
+    </ul>
+
+    <h3>Voice input does nothing</h3>
+    <ul>
+      <li>Allow both <strong>Microphone</strong> and <strong>Speech
+      Recognition</strong> in iOS Settings &rarr; Lapse.</li>
+      <li>The first use may need to download a speech model. Stay on Wi-Fi for a
+      moment and try again.</li>
+      <li>Prefer tapping to holding? Settings &rarr; Voice lets you switch
+      between hold-to-talk and tap-to-toggle.</li>
+    </ul>
+
+    <h3>A date was read wrongly</h3>
+    <p>Tap the thing and correct it. The original photograph stays attached, so
+    you can always check the label again.</p>
+  </section>
+
+  <section>
+    <h2>Requirements</h2>
+    <p>Lapse requires <strong>iOS 26 or later</strong> and runs on iPhone and
+    iPad. Some capture features depend on hardware support for Apple's
+    on-device intelligence; where a feature is unavailable, Lapse falls back
+    rather than failing.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Bugs, requests, or anything that felt wrong:
+    <a href="mailto:appwells31@gmail.com">appwells31@gmail.com</a>. We read
+    everything.</p>
+  </section>
+
+</div>
+
+<div class="footer">
+  <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
+     <a href="../index.html">Other apps</a></p>
+</div>
+
+</body>
+</html>

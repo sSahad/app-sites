@@ -1,0 +1,73 @@
+/* Lapse — the app's own palette. One accent, everything else a neutral ramp. */
+:root {
+  --gold: #E8BC70;
+  --gold-dim: #C99F58;
+  --ink: #F2EDE4;
+  --ink-2: #B5AC9E;
+  --ink-3: #7D7669;
+  --bg: #0B0A09;
+  --bg-2: #141210;
+  --rule: rgba(232, 188, 112, 0.14);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+               'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+.header {
+  background: linear-gradient(160deg, #211D1A 0%, var(--bg) 100%);
+  padding: 64px 20px 48px;
+  text-align: center;
+  border-bottom: 1px solid var(--rule);
+}
+.mark { width: 72px; height: 72px; border-radius: 17px; display: block;
+        margin: 0 auto 22px; box-shadow: 0 8px 28px rgba(0,0,0,.5); }
+.header h1 {
+  font-size: 2.3rem; font-weight: 300; letter-spacing: 3px;
+  color: var(--gold); margin-bottom: 8px;
+}
+.header .subtitle { color: var(--ink-2); font-size: 1.05rem; letter-spacing: .5px; }
+.effective-date {
+  display: inline-block; margin-top: 20px; padding: 6px 16px;
+  border: 1px solid var(--rule); border-radius: 999px;
+  color: var(--ink-3); font-size: .85rem; letter-spacing: .5px;
+}
+.container { max-width: 760px; margin: 0 auto; padding: 48px 26px 88px; }
+.summary-box {
+  background: rgba(232, 188, 112, .06);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--gold);
+  border-radius: 12px; padding: 22px 26px; margin-bottom: 44px;
+}
+.summary-box p { color: var(--ink); }
+.summary-box strong { color: var(--gold); }
+section { margin-bottom: 40px; }
+h2 {
+  font-size: 1.22rem; font-weight: 600; color: var(--gold);
+  margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 1rem; font-weight: 600; color: var(--ink); margin: 22px 0 6px; }
+p { color: var(--ink-2); margin-bottom: 14px; }
+ul { margin: 0 0 16px 20px; }
+li { color: var(--ink-2); margin-bottom: 9px; }
+li strong, p strong { color: var(--ink); }
+a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { border-bottom-color: var(--gold); }
+code {
+  background: rgba(232,188,112,.08); border-radius: 4px;
+  padding: 1px 6px; font-size: .9em; color: var(--gold);
+}
+.footer {
+  border-top: 1px solid var(--rule); padding: 30px 26px 50px;
+  text-align: center; color: var(--ink-3); font-size: .87rem;
+}
+.footer a { border: 0; }
+@media (max-width: 560px) {
+  .header { padding: 46px 18px 36px; }
+  .header h1 { font-size: 1.8rem; }
+  .container { padding: 34px 20px 64px; }
+}
