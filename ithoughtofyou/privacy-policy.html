@@ -14,7 +14,7 @@
   <img class="mark" src="icon.svg" alt="I Thought of You">
   <h1>I Thought of You</h1>
   <p class="subtitle">A quiet way to let someone know</p>
-  <span class="effective-date">Privacy Policy &nbsp;&middot;&nbsp; Effective 1 October 2026</span>
+  <span class="effective-date">Privacy Policy &nbsp;&middot;&nbsp; Effective 18 October 2026</span>
 </div>
 
 <div class="container">
@@ -93,6 +93,21 @@
     rel="noopener">Supabase</a>, which hosts our database in Singapore. It is
     encrypted on its way to and from the app. Access is controlled per account, so
     the app can only read or change what you're allowed to.</p>
+  </section>
+
+  <section>
+    <h2>5b. Services that help us run the app</h2>
+    <ul>
+      <li><strong>Cloudflare Turnstile</strong> runs a short "are you a person?" check
+      before you sign in or sign up with a password. It happens inside the app on our own
+      page; Cloudflare sees ordinary connection data for that page, never your account.</li>
+      <li><strong>Expo's push service</strong> passes notifications to Apple and Google.
+      It sees your device's push token and the fixed words "Someone thought of you", nothing
+      more. Notifications never say who.</li>
+      <li><strong>Sentry</strong> receives crash reports (what went wrong, your device model
+      and system version) so we can fix problems. We strip personal data before sending;
+      no email, name or thoughts are included.</li>
+    </ul>
   </section>
 
   <section>
