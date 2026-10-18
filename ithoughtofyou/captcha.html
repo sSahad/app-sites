@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>I Thought of You — quick check</title>
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="ithoughtofyou.css">
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstile" async defer></script>
+<style>
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  .box { text-align: center; padding: 24px; }
+  .box p { margin-top: 18px; }
+</style>
+</head>
+<body>
+<div class="box">
+  <div id="widget"></div>
+  <p>Just checking you're a person.</p>
+</div>
+<script>
+  // The app opens this page with ?sitekey=… and listens for a message with the token.
+  function post(payload) {
+    if (window.ReactNativeWebView) window.ReactNativeWebView.postMessage(JSON.stringify(payload));
+  }
+  function onTurnstile() {
+    var sitekey = new URLSearchParams(window.location.search).get('sitekey');
+    if (!sitekey) { post({ error: 'no-sitekey' }); return; }
+    turnstile.render('#widget', {
+      sitekey: sitekey,
+      theme: 'dark',
+      callback: function (token) { post({ token: token }); },
+      'error-callback': function () { post({ error: 'failed' }); },
+      'expired-callback': function () { post({ error: 'expired' }); }
+    });
+  }
+</script>
+</body>
+</html>
