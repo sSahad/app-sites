@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="Shoot Shoot">
+  <rect width="96" height="96" rx="22" fill="#17181A"/>
+  <circle cx="48" cy="48" r="38" fill="none" stroke="#F2EFEA" stroke-width="5"/>
+  <circle cx="48" cy="48" r="26" fill="none" stroke="#8C8A86" stroke-width="5"/>
+  <circle cx="48" cy="48" r="14" fill="none" stroke="#F2EFEA" stroke-width="4"/>
+  <circle cx="48" cy="48" r="7" fill="#FF6A1A"/>
+</svg>
