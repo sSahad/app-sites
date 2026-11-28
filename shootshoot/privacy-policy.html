@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shoot Shoot &mdash; Privacy Policy</title>
-<meta name="description" content="Shoot Shoot privacy policy: no account, no server of ours, the camera picture stays on your iPhone. Optional ads by Google AdMob, purchases by Apple.">
+<meta name="description" content="Shoot Shoot privacy policy: no account, no server of ours, the camera picture stays on your iPhone. Optional anonymous usage statistics and crash reports by Google Firebase, ads by Google AdMob, purchases by Apple.">
 <link rel="icon" href="icon.svg">
 <link rel="stylesheet" href="shootshoot.css">
 </head>
@@ -14,7 +14,7 @@
   <img class="mark" src="icon.svg" alt="Shoot Shoot">
   <h1>Shoot Shoot</h1>
   <p class="subtitle">AR shooting range in your room</p>
-  <span class="effective-date">Privacy Policy &nbsp;&middot;&nbsp; Effective 26 November 2026</span>
+  <span class="effective-date">Privacy Policy &nbsp;&middot;&nbsp; Effective 28 November 2026</span>
 </div>
 
 <div class="container">
@@ -22,10 +22,12 @@
   <div class="summary-box">
     <p><strong>The short version.</strong></p>
     <ul>
-      <li>The game has no account, no sign-up and no server of ours. We do not receive your data.</li>
+      <li>The game has no account, no sign-up and no server of ours. We never receive your name, email address, Apple Account or any camera picture.</li>
       <li>The camera shows your room so targets can hang on your walls. The camera picture is processed on your iPhone. It is never recorded and never uploaded.</li>
       <li>Your scores, saved ranges, daily-drill streak and settings stay on your iPhone.</li>
-      <li>If you watch an optional rewarded video, or a banner ad shows on the cooling-break screen between strings (until you make any purchase), Google AdMob (Google) collects some data to show and measure the ad. Players in regions that require it are asked for consent first.</li>
+      <li>While &ldquo;Share usage data&rdquo; is on (Settings, Data; on by default), the game sends anonymous usage statistics and crash reports through Google Firebase, so we can see how the game is played and fix problems. You can turn it off at any time.</li>
+      <li>Ads from Google AdMob never show over the camera or while you shoot: rewarded videos play only when you choose to watch one, and players who have bought nothing also see a banner and now and then a full-screen ad around the start screen, and a banner on the cooling-break screen. Google collects some data to show and measure the ads. Players in regions that require it are asked for consent first. Any purchase removes the banners and the full-screen ad.</li>
+      <li>The game does not ask to track you and does not use your iPhone's advertising identifier.</li>
       <li>Purchases are handled by Apple. Scores and achievements go to Apple Game Center if you are signed in.</li>
     </ul>
   </div>
@@ -42,7 +44,7 @@
       <li><strong>Camera.</strong> The game uses the camera through Apple's ARKit and RealityKit to show your room and to place targets on walls, floors and furniture. The pictures are processed on the device while you play. They are not recorded, not saved and not sent anywhere. If you turn on the optional finger-gun control (Settings, Controls), the game reads your hand from the camera picture on the iPhone in the same way.</li>
       <li><strong>Saved ranges.</strong> To bring a range back in the same room, the game saves a map of your room (an Apple ARKit world map) and the layout of the targets in the game's own storage on your iPhone. It never leaves the phone, except in a duel as described below.</li>
       <li><strong>Scores and settings.</strong> Your runs, personal bests, saved ranges and settings are stored on your iPhone. They are included in your own iPhone or iCloud device backup if you have one turned on.</li>
-      <li><strong>Daily drill.</strong> The daily-drill streak and your progress history (the results charts on the Progress screen) are stored on your iPhone only. The game picks each day's drill on the iPhone; nothing about it is sent anywhere.</li>
+      <li><strong>Daily drill.</strong> The daily-drill streak and your progress history (the results charts on the Progress screen) are stored on your iPhone. The game picks each day's drill on the iPhone.</li>
       <li><strong>Scanned objects (optional).</strong> If you turn on the Labs feature &ldquo;Object targets&rdquo; (Settings, Controls, off by default) and scan an object, the game saves the object's scan data and a small preview picture of it in its own storage on the iPhone. They never leave the phone.</li>
       <li><strong>Diagnostic log.</strong> The game keeps a short text log of its last ten sessions in its own storage on the iPhone (game events, timings, frame rate, heat state, and the counts in your rounds wallet). It contains no camera pictures, no name, no email address and no account identifier. It never leaves your iPhone unless you choose Settings, Data, &ldquo;Export session log&rdquo;, SHARE and send it yourself, for example to ask for help. Detailed developer tracing and test tools are compiled only into development builds, not into the App Store version. Apple's own system logs stay on your device.</li>
       <li><strong>Deleting it.</strong> Settings, Data, &ldquo;Delete runs and saved ranges&rdquo; erases your scores, personal bests, saved ranges and scanned objects. It does not reset the daily-drill streak. Deleting the game removes everything it stored on the iPhone, the streak included.</li>
@@ -50,11 +52,23 @@
   </section>
 
   <section>
-    <h2>3. Rounds, purchases and iCloud backup</h2>
-    <p>Rounds are a virtual in-game currency with no cash value. You get free rounds every day. You can watch an optional rewarded video for more rounds; when no video is available, the game offers a small free refill instead. You can also buy &ldquo;Range Pass&rdquo; packs of rounds (consumable purchases), or make a one-time &ldquo;Unlimited Rounds&rdquo; purchase. Any purchase permanently removes the banner ad.</p>
+    <h2>3. Usage statistics and crash reports (Google Firebase)</h2>
+    <p>The game uses Google Firebase Analytics and Firebase Crashlytics to learn how the game is played and why it crashes. This happens only while &ldquo;Share usage data&rdquo; is on (Settings, Data). It is on by default.</p>
+    <ul>
+      <li><strong>What is sent.</strong> Game events at natural moments, never for each shot: for example the start screen shown, a room scan finished, a range placed or left, a string finished (mode, gun, shots, hits, accuracy, score, time, reloads, frame rate and heat level), a gun chosen, the daily drill started or done, a duel started or ended, a break or cooling pause, the camera losing and finding the range, running out of rounds, the shop opened, the steps of a purchase (which product, and whether it finished, was cancelled or failed; never your payment details), a rewarded video or an ad shown, the screens you open, and a short summary when you leave the game. Also a few coarse properties: free player or buyer, favourite mode, about how many days you have played, and whether the iPhone has LiDAR. Crash reports contain the state of the game at the crash (screen, mode, gun, heat level, frame rate) and technical details of the iPhone and the crash. Firebase adds an app instance identifier (a random number created on your iPhone and reset when you delete the game), the device model, iOS version, app version, language and an approximate location (country or region) derived from your IP address.</li>
+      <li><strong>What is not sent.</strong> No name, email address, Apple Account, user id, camera picture, room map, precise location or anything you type. Firebase in this game does not use your iPhone's advertising identifier or its vendor identifier.</li>
+      <li><strong>What it is used for.</strong> Only to understand and improve the game. It is not used for advertising, not linked to your identity and not used to track you across apps or websites. Ad storage and ad personalisation are switched off for Firebase.</li>
+      <li><strong>How long.</strong> Analytics events are kept for two months; crash reports for 90 days. Google processes this data under its terms: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy and security in Firebase</a>.</li>
+      <li><strong>Your choice.</strong> Turn off &ldquo;Share usage data&rdquo; in Settings, Data, and the game stops sending both at once.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Rounds, purchases and iCloud backup</h2>
+    <p>Rounds are a virtual in-game currency with no cash value. You get free rounds every day. You can watch an optional rewarded video for more rounds; when no video is available, the game offers a small free refill instead. You can also buy &ldquo;Range Pass&rdquo; packs of rounds (consumable purchases), or make a one-time &ldquo;Unlimited Rounds&rdquo; purchase. Any purchase permanently removes the banner ads and the full-screen ad.</p>
     <ul>
       <li><strong>Purchases</strong> are processed by Apple through the App Store. We never see your payment details, name or Apple Account. The game receives a confirmation from Apple that a purchase was made.</li>
-      <li><strong>Restoring.</strong> The &ldquo;Unlimited Rounds&rdquo; purchase, and the removal of the banner ad, can be restored on any iPhone signed in to the same Apple Account with RESTORE PURCHASES, which is in the shop (GET ROUNDS) and on the ROUNDS screen. Apple confirms the purchases to the game; we do not keep a record of them on a server.</li>
+      <li><strong>Restoring.</strong> The &ldquo;Unlimited Rounds&rdquo; purchase, and the removal of the ads, can be restored on any iPhone signed in to the same Apple Account with RESTORE PURCHASES, which is in the shop (GET ROUNDS) and on the ROUNDS screen. Apple confirms the purchases to the game; we do not keep a record of them on a server.</li>
       <li><strong>Wallet.</strong> The game keeps a file on your iPhone with your round counts and the identifiers of past purchases, refunds and rewards.</li>
       <li><strong>iCloud backup of bought rounds.</strong> If you are signed in to iCloud, a copy of the record of your bought rounds (purchase identifiers, refunds, bought rounds used and whether you own Unlimited Rounds) is saved in your own iCloud key-value storage so that bought rounds come back if you reinstall the game or change iPhone. It is stored in your iCloud account under Apple's terms. We have no access to it. Free rounds are not part of it. If you sign in to a different iCloud account, the backup pauses and nothing is mixed between accounts. Without iCloud, a new iPhone still gets &ldquo;no ads&rdquo; and Unlimited Rounds back through your App Store purchase history, but not the unused rounds of Range Passes.</li>
       <li><strong>Refunds</strong> are handled by Apple. A refunded purchase is taken back by the game.</li>
@@ -62,28 +76,31 @@
   </section>
 
   <section>
-    <h2>4. Game Center</h2>
+    <h2>5. Game Center</h2>
     <p>Game Center is optional. If you are signed in to Game Center, the game sends your best scores for the leaderboards and your achievements to Apple. Apple shows them to other players according to your Game Center settings and handles them under
     <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's privacy policy</a>.
     The game never asks you to sign in during play. If you do not sign in, nothing is sent.</p>
   </section>
 
   <section>
-    <h2>5. Advertising (Google AdMob)</h2>
-    <p>The game can offer a rewarded video, an optional video you watch to earn rounds. It is shown only when you tap to watch one, never during a string and never when the game starts.</p>
-    <p>During the cooling break between strings the cooling-break screen (RANGE COLD) may also show one banner ad. The banner appears only on that screen, never while you shoot, and any purchase permanently removes it.</p>
-    <p>Ads are provided by Google AdMob using Google's Mobile Ads SDK and Google's User Messaging Platform.</p>
+    <h2>6. Advertising (Google AdMob)</h2>
+    <p>Ads are provided by Google AdMob using Google's Mobile Ads SDK and Google's User Messaging Platform. No ad is ever shown over the camera or while you shoot a string, and none is shown to a player who has bought anything in the game. The game can show:</p>
+    <ul>
+      <li><strong>Rewarded videos</strong>, optional videos you watch to earn rounds. One plays only when you tap to watch it.</li>
+      <li><strong>A banner on the start screen</strong> (the screen with the camera off that opens when you come back to the game after your first visit), and <strong>one full-screen ad</strong> when you leave that screen for the camera, at most once every 3 minutes. These begin only after you have finished three strings.</li>
+      <li><strong>A banner on the cooling-break screen</strong> (RANGE COLD) between strings, after your first finished string.</li>
+    </ul>
     <ul>
       <li><strong>What Google may collect.</strong> To deliver, limit and measure ads and to prevent fraud, Google may collect device identifiers and similar data, information about the ads you see and how you interact with them, your approximate location derived from your IP address, and diagnostic information such as performance and crash data. Google is responsible for this data. See Google's explanation of
       <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how it uses data from apps that use its services</a>
       and its <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>.</li>
       <li><strong>Non-personalised ads, no tracking prompt.</strong> The game asks Google for non-personalised ads. It does not show Apple's app tracking permission prompt, so your iPhone's advertising identifier is not available to the game or to Google through it.</li>
-      <li><strong>Consent.</strong> In the European Economic Area, the United Kingdom, Switzerland and US states with their own rules, Google shows a consent message the first time you choose to watch a video, or once at the first cooling break that would show a banner. If you decline, you simply get no videos or banners and everything else in the game works. You can change your choice at any time under &ldquo;Privacy choices&rdquo; on the ROUNDS screen, where it is offered.</li>
+      <li><strong>Consent.</strong> In the European Economic Area, the United Kingdom, Switzerland and US states with their own rules, Google shows a consent message before the first ad: the first time you choose to watch a video, or once on the start screen and once at a cooling break, the first time each would show an ad. If you decline, you simply get no videos, banners or full-screen ads, and everything else in the game works. You can change your choice at any time under &ldquo;Privacy choices&rdquo; on the ROUNDS screen, where it is offered.</li>
     </ul>
   </section>
 
   <section>
-    <h2>6. Duel (two iPhones in the same room)</h2>
+    <h2>7. Duel (two iPhones in the same room)</h2>
     <p>Duel connects two iPhones that both have the game, over your local network using Apple's Multipeer Connectivity, with encryption required. iOS asks for Local Network permission the first time you look for the other phone. Nothing is sent to the internet or to any server.</p>
     <ul>
       <li>The phones exchange shots, times and results, and a random identifier that the game creates on each iPhone. Your iPhone's name and your Apple Account are not sent.</li>
@@ -93,35 +110,36 @@
   </section>
 
   <section>
-    <h2>7. Photos</h2>
+    <h2>8. Photos</h2>
     <p>If you tap SNAPSHOT or use the hardware button as a snapshot button, the game saves that picture of your range to your Photos library. The game can only add pictures. It never reads your photos, and iOS asks your permission first. If you tap SHARE on the results card, the game hands a picture of the range to the iOS share sheet, and it goes only where you choose to send it.</p>
   </section>
 
   <section>
-    <h2>8. Children</h2>
-    <p>The game is not directed at children. It is rated 13+ on the App Store because it shows realistic-looking firearms on a target range. The game itself collects no personal information from anyone, children included.</p>
+    <h2>9. Children</h2>
+    <p>The game is not directed at children. It is rated 13+ on the App Store because it shows realistic-looking firearms on a target range. The game asks no one for personal information, children included. Its usage statistics and crash reports are not linked to a person and can be turned off.</p>
   </section>
 
   <section>
-    <h2>9. Your rights and choices</h2>
-    <p>We do not hold personal data about you, so there is nothing for us to look up, correct or delete on our side. You control the data that exists:</p>
+    <h2>10. Your rights and choices</h2>
+    <p>We do not hold your name, email address or account on any server of ours. You control the data that exists:</p>
     <ul>
       <li>On your iPhone: delete scores and saved ranges in Settings, or delete the game.</li>
       <li>Camera, Photos and Local Network access can be turned off at any time in the iPhone's Settings.</li>
+      <li>Usage statistics and crash reports: turn off &ldquo;Share usage data&rdquo; in Settings, Data. Deleting the game also resets the app instance identifier.</li>
       <li>Ads: use &ldquo;Privacy choices&rdquo; in the game, and
       <a href="https://myadcenter.google.com" target="_blank" rel="noopener">Google's ad settings</a>.</li>
       <li>Game Center and iCloud: manage them in the iPhone's Settings and Apple's privacy controls.</li>
-      <li>If you live in the EEA, the United Kingdom, California or elsewhere with data protection rights, you can ask Google (for ad data) or Apple (for Game Center, iCloud and purchases) to exercise them, or write to us at <a href="mailto:appwells31@gmail.com">appwells31@gmail.com</a> and we will help as far as we can.</li>
+      <li>If you live in the EEA, the United Kingdom, California or elsewhere with data protection rights, you can ask Google (for ad data and Firebase data) or Apple (for Game Center, iCloud and purchases) to exercise them, or write to us at <a href="mailto:appwells31@gmail.com">appwells31@gmail.com</a> and we will help as far as we can.</li>
     </ul>
   </section>
 
   <section>
-    <h2>10. Changes to this policy</h2>
+    <h2>11. Changes to this policy</h2>
     <p>If the game changes in a way that affects this policy, we will update it and change the date at the top. The current version is always at this address.</p>
   </section>
 
   <section>
-    <h2>11. Contact</h2>
+    <h2>12. Contact</h2>
     <p>Questions about privacy: write to
     <a href="mailto:appwells31@gmail.com">appwells31@gmail.com</a>.</p>
   </section>
